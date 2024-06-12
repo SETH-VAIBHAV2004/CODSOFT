@@ -39,9 +39,11 @@ h2,
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
 .btn:hover {
   box-shadow: 0 4px 8px #222;
+  background-color: darkred;
 }
 
 img {
@@ -52,7 +54,7 @@ img {
 
 .grid--cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -63,6 +65,10 @@ img {
   border-radius: 0.5rem;
   border-bottom: 4px solid crimson;
   box-shadow: 0 4px 12px #aaaaaacc;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 
 p {
@@ -151,6 +157,7 @@ header .tagline {
 .contact a {
   color: crimson;
   text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
 }
 .contact a:hover {
   text-decoration: underline;
@@ -164,6 +171,18 @@ footer {
 }
 .footer--container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about--content {
+    flex-direction: column;
+  }
+  .grid--cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
