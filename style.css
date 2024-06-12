@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+h2,
+.section--title,
+.section--desc {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.section--desc {
+  max-width: 800px;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: crimson;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  width: fit-content;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  box-shadow: 0 4px 8px #222;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.grid--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border-bottom: 4px solid crimson;
+  box-shadow: 0 4px 12px #aaaaaacc;
+}
+
+p {
+  color: #555;
+}
+
+.chip {
+  padding: 5px 12px;
+  background-color: crimson;
+  width: fit-content;
+  border-radius: 0.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+header {
+  padding: 2rem 0;
+  background-color: #f1f2f4;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header .tagline {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* About Section */
+.about .about--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.about--img {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about--text {
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.skills li {
+  padding: 0.5rem 1rem;
+  background-color: #f1f2f4;
+  border: 2px solid crimson;
+  border-radius: 0.5rem;
+}
+
+/* Projects Section */
+.projects .portfolio--img--cover {
+  position: relative;
+  height: 180px;
+}
+.projects h3 {
+  margin-top: 1rem;
+}
+
+/* Resume Section */
+.resume {
+  text-align: center;
+}
+.resume .btn {
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+.contact a {
+  color: crimson;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
