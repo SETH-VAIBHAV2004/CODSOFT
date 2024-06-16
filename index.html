@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="header--container">
+          <h1 class="animated-text">Vaibhav Seth</h1>
+          <p class="tagline animated-text">Passionate Software Engineer</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about--content">
+          <div class="about--img">
+            <img src="my-image.jpg" alt="Vaibhav Seth" />
+          </div>
+          <div class="about--text">
+            <p>
+              Hello! I'm Vaibhav Seth, a dedicated and passionate computer
+              science engineering student with a strong enthusiasm for
+              technology and innovation. Throughout my academic journey, I have
+              developed a solid foundation in various programming languages and
+              technologies, which has allowed me to work on diverse projects and
+              hone my skills.
+            </p>
+            <p>
+              My interests lie in software development, web development, and
+              UI/UX design. I enjoy creating solutions that are not only
+              functional but also aesthetically pleasing. I thrive in
+              environments where I can collaborate with others, learn
+              continuously, and push the boundaries of what technology can
+              achieve.
+            </p>
+            <p>
+              Apart from my technical skills, I am a proactive learner and a
+              problem-solver who loves taking on new challenges. Whether it's a
+              group project or an individual endeavor, I bring a positive
+              attitude and a commitment to excellence. I am excited about the
+              future of technology and am eager to contribute to innovative
+              projects that make a difference.
+            </p>
+            <p>
+              In my free time, I enjoy exploring new technologies, participating
+              in hackathons, and reading about the latest trends in software
+              engineering. I'm always looking for opportunities to grow and
+              connect with like-minded individuals in the tech community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="html.gif" alt="HTML" class="skill-icon" />
+            <p>HTML</p>
+          </div>
+          <div class="skill-card">
+            <img src="css.gif" alt="CSS" class="skill-icon" />
+            <p>CSS</p>
+          </div>
+          <div class="skill-card">
+            <img src="javascript.gif" alt="JavaScript" class="skill-icon" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="react.gif" alt="React JS" class="skill-icon" />
+            <p>React JS</p>
+          </div>
+          <div class="skill-card">
+            <img src="nextjs.gif" alt="Next JS" class="skill-icon" />
+            <p>Next JS</p>
+          </div>
+          <div class="skill-card">
+            <img src="uiux.gif" alt="UI/UX Design" class="skill-icon" />
+            <p>UI/UX Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid--cards">
+          <div class="card">
+            <div class="portfolio--img--cover">
+              <img src="project1.jpg" alt="Project 1" />
+            </div>
+            <div class="card-content">
+              <h3>STUDENT MANAGEMENT SYSTEM</h3>
+              <p>
+                A Student Management System (SMS) is a comprehensive software
+                solution designed to facilitate and streamline various
+                administrative and academic processes within educational
+                institutions. It is an essential tool for schools, colleges, and
+                universities, enabling efficient management of student-related
+                data and activities.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="portfolio--img--cover">
+              <img src="project2.jpg" alt="Project 2" />
+            </div>
+            <div class="card-content">
+              <h3>ELECTRICITY BILLING SYSTEM</h3>
+              <p>
+                An Electricity Billing System (EBS) is a sophisticated software
+                application designed to manage the billing and payment processes
+                for electricity consumption. It is widely used by utility
+                companies to ensure accurate billing, enhance customer service,
+                and streamline operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume">
+      <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-content">
+          <p>
+            Download my resume to learn more about my skills and experiences.
+          </p>
+          <a href="resume.pdf" class="btn" target="_blank"
+            >Download My Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:vaibhavseth.02.2004@gmail.com"
+            >vaibhavseth.02.2004@gmail.com</a
+          >
+        </p>
+        <p>Phone: <a href="tel:+9305082306">9305082306</a></p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer--container">
+          <p>&copy; 2024 Vaibhav Seth | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for fade-in effect -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const aboutTextParagraphs = document.querySelectorAll(".about--text p");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("fade-in");
+            }
+          });
+        });
+
+        aboutTextParagraphs.forEach((paragraph) => {
+          observer.observe(paragraph);
+        });
+      });
+    </script>
+  </body>
+</html>
